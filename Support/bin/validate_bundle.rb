@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby18 -w
+#!/usr/bin/env ruby
 
 require "yaml"
 require "find"

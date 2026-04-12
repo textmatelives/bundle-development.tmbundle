@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby18 -wKU
+#!/usr/bin/env ruby
 
 $: << '/Applications/TextMate.app/Contents/SharedSupport/Support/lib/'
 $: << '/Library/Application Support/TextMate/Support/lib/'
