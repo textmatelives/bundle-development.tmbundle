@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>#!/usr/bin/env ruby18 -wKU
+	<string>#!/usr/bin/env ruby -wKU
 </string>
 	<key>name</key>
-	<string>Ruby 1.8 Shebang</string>
+	<string>Ruby Shebang</string>
 	<key>scope</key>
 	<string>L:(attr.bundle-editor.command dyn.caret.begin.document)</string>
 	<key>tabTrigger</key>
