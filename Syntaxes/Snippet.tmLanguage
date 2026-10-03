@@ -221,7 +221,7 @@
 									<key>comment</key>
 									<string>ASK ABOUT \( HERE AND IN VARIABLES</string>
 									<key>match</key>
-									<string>\\[nt$\\]</string>
+									<string>\\[nt$\\/]</string>
 									<key>name</key>
 									<string>constant.character.escape.tm-snippet</string>
 								</dict>
@@ -459,7 +459,7 @@
 											<key>comment</key>
 											<string>ASK ABOUT \( HERE AND IN VARIABLES</string>
 											<key>match</key>
-											<string>\\[nt$\\]</string>
+											<string>\\[nt$\\/]</string>
 											<key>name</key>
 											<string>constant.character.escape.tm-snippet</string>
 										</dict>
