@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wEutf-8
+# Shows graphically all of a theme's defined colors and their scopes in an html window.
+
+# Thin launcher: the real implementation lives in Support/lib so it stays
+# editable, testable, and out of the plist XML. TM_BUNDLE_SUPPORT points
+# at this bundle's Support directory wherever the bundle is installed.
+load File.join(ENV['TM_BUNDLE_SUPPORT'], 'lib', 'theme_colors.rb')
+ThemeColors.show
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>name</key>
+	<string>Show theme colors</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>html</string>
+	<key>outputLocation</key>
+	<string>newWindow</string>
+	<key>uuid</key>
+	<string>A4829886-4D44-41E3-A87C-02A6AAA24C54</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

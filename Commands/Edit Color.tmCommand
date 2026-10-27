@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wEutf-8
+# Active in Theme property lists.
+# Choose a color in the apple color selecting, defaulting to the current #rrggbb containing the carat/selection.
+
+# Thin launcher: the real implementation lives in Support/lib so it stays
+# editable, testable, and out of the plist XML. TM_BUNDLE_SUPPORT points
+# at this bundle's Support directory wherever the bundle is installed.
+load File.join(ENV['TM_BUNDLE_SUPPORT'], 'lib', 'edit_color.rb')
+EditColor.run
+</string>
+	<key>fallbackInput</key>
+	<string>line</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>name</key>
+	<string>Edit Color…</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>scope</key>
+	<string>string.quoted.single.plist, string.quoted.double.plist, meta.tag.string.xml.plist, string.quoted.single.xml.plist, string.quoted.double.xml.plist</string>
+	<key>uuid</key>
+	<string>D31EA401-6771-4517-B098-F54D7BDF3094</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
